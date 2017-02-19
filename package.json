@@ -1,0 +1,28 @@
+{
+  "name": "react-new-component",
+  "version": "1.0.3",
+  "description": "Create an initial '.js' file for reactjs component. ",
+  "main": "bin/index.js",
+  "bin": {
+    "new-comp": "bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/believeitcould/react-new-component.git"
+  },
+  "keywords": [
+    "reactjs"
+  ],
+  "author": "believeitcould",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/believeitcould/react-new-component/issues"
+  },
+  "homepage": "https://github.com/believeitcould/react-new-component#readme",
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
+}
