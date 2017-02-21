@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class XXX extends Component {
+export default class aooppp extends Component {
 
     constructor(props) {
 		super()

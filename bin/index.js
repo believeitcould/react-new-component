@@ -6,7 +6,7 @@ var fs = require('fs')
 var readline = require('readline')
 
 program
-    .version('1.0.3')
+    .version('1.0.4')
     .description('creat initial react component')
     .option('-s, --semicolon', 'use semicolon in file')
     .parse(process.argv)
@@ -25,9 +25,9 @@ function confirm(msg, cb) {
     })
 }
 
-function loadTemplate(semicolon) {
+function loadTemplate(semicolon, className) {
     var fileName = semicolon ? 'componentS.js' : 'component.js'
-    return fs.readFileSync(path.join(__dirname, '../template', fileName), 'utf-8')
+    return fs.readFileSync(path.join(__dirname, '../template', fileName), 'utf-8').replace('XXX', className)
 }
 
 function write(filePath, str, mode) {
@@ -39,7 +39,7 @@ function main() {
     var fileName = program.args.shift()
     if (!fileName) return console.log('there should be a filename!') 
     var filePath = path.resolve('.', fileName + '.js')
-    var content = loadTemplate(program.semicolon)
+    var content = loadTemplate(program.semicolon, fileName)
     fs.exists(filePath, function (exists) {
         if (exists) {
             confirm(`ATTENTION: ${fileName} already exists, over write? [y/N] `, function (ans) {

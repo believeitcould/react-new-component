@@ -24,7 +24,7 @@ Then, you should get 'App.js' in your project root directory and it looks like t
 ```
 import React, { Component } from 'react'
 
-export default class extends Component {
+export default class App extends Component {
 
     constructor(props) {
 		super()
