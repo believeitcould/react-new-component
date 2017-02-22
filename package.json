@@ -1,6 +1,6 @@
 {
   "name": "react-new-component",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Create an initial '.js' file for reactjs component. ",
   "main": "bin/index.js",
   "bin": {

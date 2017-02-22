@@ -1,12 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export default class XXX extends Component {
 
     constructor(props) {
-		super()
-		this.state = {
-
-		}
+		super();
+		this.state = {	
+            
+        }
 	}
 
     componentDidMount() {
@@ -23,5 +23,5 @@ export default class XXX extends Component {
 }
 
 const styles = {
-
+    
 }

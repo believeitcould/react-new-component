@@ -6,7 +6,7 @@ var fs = require('fs')
 var readline = require('readline')
 
 program
-    .version('1.0.4')
+    .version('1.0.5')
     .description('creat initial react component')
     .option('-s, --semicolon', 'use semicolon in file')
     .parse(process.argv)
@@ -26,8 +26,9 @@ function confirm(msg, cb) {
 }
 
 function loadTemplate(semicolon, className) {
-    var fileName = semicolon ? 'componentS.js' : 'component.js'
-    return fs.readFileSync(path.join(__dirname, '../template', fileName), 'utf-8').replace('XXX', className)
+    var content = fs.readFileSync(path.join(__dirname, '../template/component.js'), 'utf-8').replace('XXX', className)
+    if (!semicolon) content = content.replace(/;/g, '')
+    return content
 }
 
 function write(filePath, str, mode) {
