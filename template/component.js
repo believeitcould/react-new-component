@@ -15,7 +15,7 @@ export default class XXX extends Component {
 
     render() {
         return(
-            <div>
+            <div style={styles.container}>
                 this is a new component!
             </div>
         )
@@ -23,5 +23,7 @@ export default class XXX extends Component {
 }
 
 const styles = {
-    
+    container: {
+        
+    }
 }
