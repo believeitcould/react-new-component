@@ -1,13 +1,13 @@
 {
   "name": "react-new-component",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Create an initial '.js' file for reactjs component. ",
   "main": "bin/index.js",
   "bin": {
     "new-comp": "bin/index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --growl test/"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,9 @@
   "homepage": "https://github.com/believeitcould/react-new-component#readme",
   "dependencies": {
     "commander": "^2.9.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
   }
 }
