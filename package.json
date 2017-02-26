@@ -7,7 +7,7 @@
     "new-comp": "bin/index.js"
   },
   "scripts": {
-    "test": "mocha --growl test/"
+    "test": "mocha test/"
   },
   "repository": {
     "type": "git",
